@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Roboto+Mono:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+.container {
+  max-width: 350px;
+
+  padding: 1.6rem;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: hsl(216, 50%, 16%);
+}
+.img {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.img > img {
+  display: block;
+}
+.img img {
+  width: 100%;
+}
+.img:hover .img1 {
+  display: block;
+  cursor: pointer;
+  background-color: hsl(178, 100%, 50%);
+}
+.img1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+.img1 > img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+.title h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.6rem;
+}
+.title h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.title p {
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 0.6em;
+  font-style: 18px;
+  line-height: 1.4;
+}
+
+.utility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.utility img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.utility-icon {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.utility-icon span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.utility div:first-child span {
+  color: hsl(178, 100%, 50%);
+}
+
+.utility div:nth-child(2) span {
+  color: rgb(139, 172, 217);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  margin-bottom: 0;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1.5px solid white;
+  margin-right: 20px;
+}
+
+.footer p {
+  color: hsl(215, 51%, 70%);
+}
+.footer span {
+  color: #fff;
+}
+.footer span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+hr {
+  height: 0px;
+  border: 0.1px solid hsl(215, 32%, 27%);
+}
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0.5rem;
+  }
+}
